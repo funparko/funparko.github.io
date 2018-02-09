@@ -7,16 +7,92 @@
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-
 		  gtag('config', 'UA-650102-4');
 		</script>
     <meta charset="utf-8">
-    <title>🎄</title>
+    <title>Kalle Peterz</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:900" rel="stylesheet">
+    <style>
+    body, html, main {
+      height: 100%;
+    }
+      body {
+        background: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align:center;
+      }
+      a,
+      a:hover {
+       color:#fff;
+      }
+      h1, h2 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color:#A6D9D2;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .card {
+        background: #2C7F74;
+        max-width: 20rem;
+        border:10px solid #49988D;
+        color:#fff;
+        border-radius:1rem;
+        transform: scale(0);
+        transform-origin:center center;
+        transition: .5s transform ease;
+        perspective: 2000;
+        box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .08);
+      }
+      .run .card {
+        transform: scale(1);
+      }
+      .card-body {
+        padding: 1.25rem 2rem 0;
+        transition: .5s opacity ease .25s;
+        opacity: 0;
+      }
+      .run .card-body {
+        opacity: 1;
+      }
+      .list-group-item {
+        text-align:center;
+        background: #2C7F74;
+      }
+      .list-group p {
+        color:#A6D9D2;
+        font-size: .75rem;
+      }
+    </style>
   </head>
   <body>
-  	🎄
+    <main class="d-flex justify-content-center">
+      <div class="card align-self-center">
+        <div class="card-body">
+          <h1 class="card-title">Kalle Peterz</h1>
+          <p>
+            <a href="&#109ailt&#111;&#58;&#107;a&#114;&#108;&#46;pete&#114;&#122;&#64;&#103;m&#97;il&#46;com">karl.peterz@gmail.com</a><br>
+            <a href="https://twitter.com/funparko" class="card-link">Twitter</a>
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li><h2>Projects</h2></li>
+          <li><a href="/timer">Timer</a> <p>Timer for kids</p></li>
+          <li><a href="http://joytree.se">Joy Tree</a> <p>A chritmas tree made out of emojis</p></li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      setTimeout(function() {
+        document.getElementsByTagName('html')[0].classList.add("run");
+      }, 100)
+    </script>
   </body>
 </html>
